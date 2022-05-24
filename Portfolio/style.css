@@ -1,0 +1,662 @@
+
+/* OSNOVE _______________________________________________________________*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	background:#151414;
+	color:#d0d0d0;
+}
+
+.about-me-text p {
+	font-size:15pt;
+}
+
+.about-web-text p {
+	font-size:15pt;
+	float:right;
+	width:400px;
+	margin-right:90px;
+	text-align:justify;
+}
+
+
+.header {
+	height: 150px;
+	background-size: cover;
+}
+
+.header a {
+	font-size: 25pt;
+	color: #fff;
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-bottom:100px;
+	display: block;
+	text-decoration: none;
+	text-align:center;
+	font-family:arial;
+}
+.header p {
+	font-size: 42pt;
+	color: #fff;
+	text-transform: lowercase;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	font-family: 'Lobster', cursive;
+}
+
+
+.section {
+	margin: 50px 0;
+}
+.square-blocks div {
+	height: 250px;
+}
+.square-blocks .light-gray-bg {
+	background-color: #F0F0F0;
+}
+.square-blocks .dark-gray-bg {
+	background-color: #E0E0E0;
+}
+
+h1 {
+	margin-bottom: 40px;
+	text-align:left;	
+}
+
+.info-page-title {
+	margin-bottom: 40px;
+	text-align:center;	
+}
+
+h2 {
+	padding:20px;
+}
+.square-blocks p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 18pt;
+}
+.about-me img,
+.article img {
+	width: 100%;
+}
+.about-me div,
+.article div {
+	padding: 0;
+}
+.about-me-text,
+.article-text {
+	padding-left: 40px !important;
+	padding-right: 40px !important;
+}
+.section-title {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.square-blocks span {
+	font-size: 32pt;
+}
+.square-blocks a {
+	color: #000;
+}
+.square-blocks a:hover {
+	color: #F1C40F;
+	text-decoration: none;
+}
+
+.adobe-iconW {
+	width:3%;
+	height:3%;
+	margin-left:15px;
+	margin-bottom:10px;
+	
+}
+.web-img {
+	height:30%;
+	width:30%;
+	margin-left:10px;
+	padding:10px;
+	border-radius: 25px;
+	margin-bottom:20px;
+}
+
+.web-block {
+	background-color:#312f2f;
+}
+
+
+/* HYPERLINK _____________________________________________________________________*/
+
+/* Neposjećen */
+.section a:link {
+	text-decoration:underline;
+	color:white; 
+}
+/* Posjećen */
+.section a:visited {
+	color:white;
+	text-decoration: none;
+}
+/* Prijelaz mišem, selektiran */
+.section a:hover, a:active { 
+	/*text-decoration:underline;*/
+	color:white;
+	font-weight:bold;
+}
+
+
+/* NAV _______________________________________________________________*/
+
+nav {
+	height:50px;
+	/*z-index:10;*/
+	font-size:12pt;
+	background:black;
+	margin-top:13px;
+}
+
+.meni{
+	list-style-type:none;
+	margin:0px 0px 0px 60px;
+	padding:10px;
+	width:100%;
+	position:relative;
+	/*z-index:15;*/
+	
+}
+	
+nav li{
+	font-family: 'Roboto', sans-serif;
+	font-size:16pt;
+	text-decoration:bold;
+	display:inline;
+	float:center;
+	text-align:center;
+	position:relative;
+	
+}
+
+
+nav li a{
+	display:inline;
+	text-align:center;
+	color:white;
+	text-decoration:none;
+	/*padding:5px 15px;*/
+	width:100%;
+	}
+	
+
+nav li a:hover{
+	font-weight:bold;
+	
+	}
+
+
+nav li a:active{
+	color:white;
+	font-weight:bold;
+	text-decoration:bold;
+	}
+
+nav li ul {
+	display:none;
+}
+
+
+/* CAROUSEL  ______________________________________________________________________*/
+
+#descript-text  {
+	font-size:15pt;
+	color:white;
+	float:right;
+	width:300px;
+	margin-right:80px;
+	margin-top:30px;
+	
+	
+}
+
+#descript-text4  {
+	font-size:15pt;
+	color:white;
+	float:right;
+	width:400px;
+	margin-right:200px;
+	margin-top:30px;
+	
+}
+.mySlides {
+    display: flex;
+    align-items: center;
+}
+
+.mySlides div{
+    flex: 1;
+}
+
+.works-img {
+	height:60%;
+	width:60%;
+	margin-left:40px;
+	margin-top:30px;
+}
+
+.works-img2 {
+	height:30%;
+	width:30%;
+	margin-left:130px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.works-img3 {
+	height:55%;
+	width:55%;
+	margin-left:80px;
+	margin-top:30px;
+}
+
+
+.mySlides {
+	display: none;
+}
+
+/*	
+img {
+	vertical-align: middle;
+}
+*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  min-height: 600px;
+  position: relative;
+  margin: auto;
+  background-color: #312f2f;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+ 
+}
+
+.active, .dot:hover {
+  background-color: red;
+  
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/* MODAL IMAGE  _____________________________________________________________________*/
+
+
+
+
+
+
+/* Style the Image Used to Trigger the Modal *//*
+.myImgI {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImgI:hover {opacity: 0.7;}
+
+/* The Modal (background) *//*
+.modalI {
+    display: none; /* Hidden by default 
+    position: fixed; /* Stay in place 
+    z-index: 5; /* Sit on top 
+    padding-top: 100px; /* Location of the box 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width 
+    height: 100%; /* Full height 
+    overflow: auto; /* Enable scroll if needed 
+    background-color: rgb(0,0,0); /* Fallback color 
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity 
+}
+*/
+/* Modal Content (Image) *//*
+.modal-contentI {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+
+/* Add Animation - Zoom in the Modal *//*
+.modal-contentI {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+/*
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button *//*
+.closeI {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeI:hover,
+.closeI:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}*/
+
+/* 100% Image Width on Smaller Screens *//*
+@media only screen and (max-width: 700px){
+    .modal-contentI {
+        width: 100%;
+    }
+}
+*/
+/* PHOTOGRAPHY LIGHTBOX _____________________________________________________________________*/
+
+* {
+  box-sizing: border-box;
+  
+}
+
+.rowP > .columnP {
+  padding: 0 8px;
+  margin-top:15px;
+}
+
+.rowP:after {
+  content: "";
+  display: table;
+  clear: both;
+    
+}
+
+.columnP {
+  float: left;
+  width: 25%;
+ 
+}
+
+
+/* The Modal (background) */
+.modalP {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  padding-top: 30px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow:none;
+  background-color: black;
+
+}
+
+/* Modal Content */
+.modal-contentP {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1000px;
+
+}
+
+/* Modal Content for Draw */
+.sectionDraw .modal-contentP {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 35%;
+  height:35%;
+  
+
+}
+/* Modal Content for Draw *//*
+.sectionDraw .modal-contentP9 {
+  position: relative;
+  background-color: #fefefe;
+  margin-left:-220px;
+  padding: 0;
+  width: 1000px;
+  height:100%;
+}
+*/
+
+/* The Close Button */
+.closeP {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.closeP:hover,
+.closeP:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlidesP {
+  display: none;
+}
+
+.cursorP {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prevP,
+.nextP {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Next & previous buttons for Draw*/
+.sectionDraw
+.prevPa,
+.nextPa {
+	cursor: pointer;
+  position: absolute;
+  top: 150%;
+  width: auto;
+   padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  
+}
+
+/* Position the "next button" to the right */
+.nextP {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.nextPa {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevP:hover,
+.nextP:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* On hover, add a black background color with a little bit see-through */
+.prevPa:hover,
+.nextPa:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertextP {
+  color: #f2f2f2;
+ text-shadow:2px 2px 2px black;
+  font-size: 13px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  margin-left:-180px;
+  background-color:#252222;
+}
+
+ img {
+  margin-bottom: -4px;
+  max-height:55%;
+}
+
+/* Caption of Modal Image */
+.captionP {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 0px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 30px;
+}
+
+.caption-containerP {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demoP {
+  opacity: 0.6;
+}
+
+.activeP,
+.demoP:hover {
+  opacity: 1;
+}
+
+img.hover-shadowP {
+  transition: 0.3s
+}
+
+.hover-shadowP:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
