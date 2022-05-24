@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"> 
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ema Devčić - Portfolio</title>
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:300,400" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="img/fav.png"/>		
+	</head>
+	
+	<body>
+		<div class="container">
+			
+			<nav>
+			<ul class="meni">
+				<li><a href="index.html">Homepage &nbsp; | &nbsp;</a></li>
+				<li><a href="web.html">Web design &nbsp; | &nbsp;</a></li>
+				<li><a href="graphic.html">Graphic design &nbsp;  | &nbsp;</a></li>
+				<li><a href="photog.html">Photography &nbsp;  | &nbsp;</a></li>
+				<li><a href="draw.html">Drawings</a></li>
+			</ul>
+			</nav>
+			
+			
+			<!-- ______________________PHOTOGRAPHY______________________ -->
+			<div class="section">
+			<div class="sectionDraw">
+		
+				<div class="rowP">
+				  <div class="columnP">
+					<img src="img/draw-gallery/draw01a.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadowP cursorP">
+				  </div>
+				  <div class="columnP">
+					<img src="img/draw-gallery/draw02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadowP cursorP">
+				  </div>
+				  <div class="columnP">
+					<img src="img/draw-gallery/draw03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadowP cursorP">
+				  </div>
+				  <div class="columnP">
+					<img src="img/draw-gallery/draw05.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadowP cursorP">
+				  </div>
+				  <div class="columnP">
+					<img src="img/draw-gallery/draw06.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadowP cursorP">
+				  </div>
+				  <div class="columnP">
+					<img src="img/draw-gallery/draw07.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadowP cursorP">
+				  </div>
+				  <div class="columnP">
+					<img src="img/draw-gallery/draw08.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadowP cursorP">
+				  </div>
+				  <div class="columnP">
+					<img src="img/draw-gallery/draw09a.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadowP cursorP">
+				  </div>
+				  
+				  
+				</div>
+
+				<div id="myModalP" class="modalP">
+				  <span class="closeP cursorP" onclick="closeModal()">&times;</span>
+				  <div class="modal-contentP">
+
+					<div class="mySlidesP">
+					  <img src="img/draw-gallery/draw01.jpg" style="width:100%">
+					</div>
+					
+
+					<div class="mySlidesP">
+					  <img src="img/draw-gallery/draw02.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlidesP">
+					  <img src="img/draw-gallery/draw03.jpg" style="width:100%">
+					</div>
+					
+					<div class="mySlidesP">
+					  <img src="img/draw-gallery/draw05.jpg" style="width:100%" >
+					</div>
+					
+					<div class="mySlidesP">
+					  <img src="img/draw-gallery/draw06.jpg" style="width:100%">
+					</div>
+					
+					<div class="mySlidesP">
+					  <img src="img/draw-gallery/draw07.jpg" style="width:100%">
+					</div>
+					
+					<div class="mySlidesP">
+					  <img src="img/draw-gallery/draw08.jpg" style="width:100%">
+					</div>
+					
+					<div class="modal-contentP9">
+					<div class="mySlidesP">
+					  <img src="img/draw-gallery/draw09b.jpg" style="width:100%" class="draw09img">
+					</div>
+				
+					</div>
+					
+					<a class="prevPa" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="nextPa" onclick="plusSlides(1)">&#10095;</a>
+
+					
+					</div>
+  
+					<div class="caption-containerP">
+					  <p id="captionP"></p>
+					</div>
+
+	  <!--
+					<div class="columnP">
+					  <p class="demoP cursorP" style="width:100%" alt="f u" >
+					</div>
+					<div class="columnP">
+					  <p class="demoP cursorP" style="width:100%" alt="Trolltunga, Norway">
+					</div>
+					<p class="columnP">
+					  <img class="demoP cursorP" style="width:100%" alt="Mountains and fjords">
+					</div>
+					<div class="columnP">
+					  <p class="demoP cursorP" style="width:100%" alt="Northern Lights">
+					</div>
+				  -->
+				</div>
+</div>
+</div>
+<script>
+
+function openModal() {
+  document.getElementById('myModalP').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModalP').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidesP");
+  var dots = document.getElementsByClassName("demoP");
+  var captionText = document.getElementById("captionP");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+</div>	
+</body>
+</html>
