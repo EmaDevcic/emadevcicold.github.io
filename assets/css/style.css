@@ -371,9 +371,9 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 --------------------------------------------------------------*/
 .footer {
   padding: 0 0 4rem 0;
-   height: 20px;
-  background-color:#312b2b; 
-  color:white;
+   height: 20px; 
+   background-color:#312b2b; 
+   color:white;
    
 }
 .footer a {
@@ -399,4 +399,8 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 .social a:hover {
   color: #000;
+}
+
+.row {
+  padding-top:20px;
 }
