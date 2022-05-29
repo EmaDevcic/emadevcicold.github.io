@@ -402,5 +402,49 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .row {
-  padding-top:20px;
+  padding-top:10px;
+}
+
+.mb-1 {
+  padding-top:10px;
+}
+
+.img-fluidbig {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.img-fluidbiga {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+
+.img-fluidbigb {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.img-fluidbigc {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.img-fluidbigd {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
