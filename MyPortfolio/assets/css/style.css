@@ -456,3 +456,10 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   margin-right: auto;
   width: 99%;
 }
+.img-fluidbigf {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
