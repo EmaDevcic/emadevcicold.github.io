@@ -15,12 +15,13 @@ body {
 
 
 a {
-  color: #4564b2;
+  color: #777;
   text-decoration: none;
 }
 
 a:hover {
-  color: #4a8aa8;
+  color: #000;
+}
 
 h1, h2, h3, h4, h5, h6, .font-heading {
   font-family: "Raleway", sans-serif;
