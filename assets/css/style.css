@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.7);
   visibility: hidden;
   opacity: 0;
   transition: 0.3s all ease-in-out;
@@ -471,4 +471,22 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   margin-left: auto;
   margin-right: auto;
   width: 99%;
+}
+
+.img-icon 
+{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.img-icon-a 
+{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
 }
